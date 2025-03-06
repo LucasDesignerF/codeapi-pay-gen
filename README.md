@@ -71,8 +71,6 @@ O **CodeAPI - Payment Links Gen** é uma aplicação web estática que permite c
   <img src="https://media.discordapp.net/attachments/1343354778574389299/1347030739665031239/image.png?ex=67ca57a2&is=67c90622&hm=7a5f839b753cc63a7ea32fd88656cc90395b07093fb18f0a60430a1f2b88b1f1&=&format=webp&quality=lossless&width=985&height=554" alt="Sobre a Plataforma" width="300"/>
 </p>
 
-*(Substitua os placeholders acima por capturas de tela reais do projeto! Recomendo usar ferramentas como Lightshot ou ShareX para capturar e hospedar as imagens no GitHub ou Imgur.)*
-
 ---
 
 ## 🤝 Contribuição
