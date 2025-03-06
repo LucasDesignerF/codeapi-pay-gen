@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAPI - Sobre</title>
+    <!-- Metadados para embeds -->
+    <meta name="description" content="Saiba mais sobre o CodeAPI Payment Links Gen, uma ferramenta para gerar links de pagamento Pix de forma prática e eficiente.">
+    <meta property="og:title" content="CodeAPI - Sobre">
+    <meta property="og:description" content="Saiba mais sobre o CodeAPI Payment Links Gen, uma ferramenta para gerar links de pagamento Pix de forma prática e eficiente.">
+    <meta property="og:image" content="https://t4.ftcdn.net/jpg/03/48/80/11/360_F_348801155_mjJdt25Vkap8MSgxgMbmOYmdn5JdCfvp.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codeapi-pay.redebots.shop/sobre">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeAPI - Sobre">
+    <meta name="twitter:description" content="Saiba mais sobre o CodeAPI Payment Links Gen, uma ferramenta para gerar links de pagamento Pix de forma prática e eficiente.">
+    <meta name="twitter:image" content="https://t4.ftcdn.net/jpg/03/48/80/11/360_F_348801155_mjJdt25Vkap8MSgxgMbmOYmdn5JdCfvp.jpg">
+    <meta name="twitter:url" content="https://codeapi-pay.redebots.shop/sobre">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN via Cloudflare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/03/48/80/11/360_F_348801155_mjJdt25Vkap8MSgxgMbmOYmdn5JdCfvp.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background: rgba(18, 18, 18, 0.8);
+            border-bottom: 1px solid rgba(21, 88, 67, 0.3);
+            z-index: 10;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background: rgba(18, 18, 18, 0.8);
+            border-top: 1px solid rgba(21, 88, 67, 0.3);
+            z-index: 10;
+        }
+        a {
+            color: #155843;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #1a6b50;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            min-height: calc(100vh - 112px);
+        }
+        @media (max-width: 640px) {
+            .max-w-md {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-green-400">CodeAPI - Payment Links Gen</div>
+        <div class="space-x-4">
+            <a href="{{ url_for('index') }}" class="text-green-400 hover:text-green-300 transition duration-200">
+                <i class="fas fa-home mr-1"></i> Início
+            </a>
+            <a href="{{ url_for('sobre') }}" class="text-green-400 hover:text-green-300 transition duration-200">
+                <i class="fas fa-info-circle mr-1"></i> Sobre
+            </a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="max-w-md w-full bg-[#1a1a1a] rounded-lg shadow-lg p-6">
+            <h1 class="text-2xl font-bold text-center text-green-400 mb-6">Sobre o Projeto</h1>
+            <div class="space-y-4 text-gray-300">
+                <p>
+                    O <strong>CodeAPI - Payment Links Gen</strong> é uma ferramenta desenvolvida para simplificar a criação de links de pagamento via Pix. Nosso objetivo é permitir que qualquer pessoa gere links personalizados de forma rápida e prática, sem complicações.
+                </p>
+                <p>
+                    Este projeto foi idealizado e desenvolvido por <strong>LucasDev</strong>, sob a marca <strong>CodeProjects</strong>. Utilizamos tecnologias modernas como Flask, HTML, TailwindCSS e JavaScript para garantir uma experiência fluida e eficiente.
+                </p>
+                <p>
+                    Para dúvidas, sugestões ou suporte, junte-se ao nosso servidor no Discord: 
+                    <a href="https://discord.gg/x74fnzcz2S" class="underline">CodeProjects Discord</a>.
+                </p>
+                <p class="text-sm text-center mt-6">
+                    Versão 1.0.0 | Última atualização: Março 2025
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer p-4 flex justify-center items-center">
+        <p class="text-sm">
+            © Code API é Propriedade <a href="https://discord.gg/x74fnzcz2S" class="text-green-400 hover:text-green-300 transition duration-200">CodeProjects</a>, by LucasDev. Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+</html>
